@@ -1,16 +1,11 @@
 ---
 import Navbar from "../components/navbar.astro";
 import Header from "../components/header.astro";
+import Head from "../components/head.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+	<Head />
 	<body class="bg-neutral-950 h-screen w-full">
 		<Navbar />
 		<Header />
@@ -18,7 +13,7 @@ import Header from "../components/header.astro";
 </html>
 <style>
 	body {
-		background-image: url('/portfolio/Background.png');
+		background-image: url("/portfolio/Background.png");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
